@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf976ed69b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        /* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* Main Styling */
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Utility Classes */
+.container {
+    margin: auto;
+    max-width: 1000px;
+    overflow: auto;
+    padding: 10px 20px;
+
+}
+
+.text-primary {
+    color: #f7c08a;
+}
+
+/* Navbar */
+#navbar {
+    background-color: rgb(36, 95, 110);
+    color: #fff;
+    overflow: auto;
+}
+#navbar .container .logo-title {
+    float: left;
+    width: 50%;
+}
+#navbar .container .nav-links{
+    float: right;
+    width: 50%
+}
+#navbar .container .nav-links .forms {
+    float: right;
+    width: 50%;
+}
+#navbar .container .nav-links .quick-links {
+    float: right;
+}
+
+
+input[type=text] {
+    display: block;
+    width: 60px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 5px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:active {
+    width: 100%;
+}
+
+#navbar .quick-links{
+    display: inline-flex;
+    list-style: none;
+
+}
+#navbar .quick-links a {
+    display: inline-block;
+    padding: 3px;
+    font-size: 10px;
+    color: #fff
+}
+
+#navbar .yellow-line {
+    height: 5px;
+    background-color: yellow;
+}
+
+#navbar .menu-bar {
+    margin: auto;
+    max-width: 1000px;
+    
+    
+}
+
+#navbar .menu-bar ul {
+    
+    list-style: none;
+}
+
+#navbar .menu-bar ul li {
+    
+    float: left;
+}
+
+#navbar .menu-bar ul li a {
+    color: #fff;
+    display: block;
+    padding: 5px 20px;
+}
+
+
+/* Table Styling */
+
+table {
+    width: 100%;
+}
+table th {
+    background-color: rgb(36, 95, 110);
+    color: #fff;
+}
+
+table td {
+    padding: 10px
+}
+
+.last-line {
+    width:100%;
+    border: solid 1px black;
+    padding: 10px;
+    color: red;
+}
+.icons {
+    margin: auto;
+    max-width: 500px;
+}
+.box {
+    display: inline-block;
+    padding: 10px 10px;
+    margin:auto;
+
+}
+i {
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background: rgb(216, 188, 31);
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo-title">
+                    <img src="logopu.png" alt="logo">
+                    <h1>University of the Punjab</h1>
+                </div>
+                <div class="nav-links">
+                    <div class="forms">
+                        <select name="Languages" class="language-menu">
+                            <ol>
+                                <li>en</li>
+                                <li>fr</li>
+                            </ol>
+                        </select>
+                        <form>
+                            <input type="text" name="search" placeholder="Search..">
+                        </form>
+                    </div>
+                    <ul class="quick-links">
+                        <li><a href="#">Quick Links</a></li>
+                        <li><a href="#">Info Desk</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#"><span class="text-primary">FAQs</span></a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="yellow-line"></div>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="#">menu item 1</a></li>
+                    <li><a href="#">menu item 2</a></li>
+                    <li><a href="#">menu item 3</a></li>
+                    <li><a href="#">menu item 4</a></li>
+                    <li><a href="#">menu item 5</a></li>
+                    <li><a href="#">menu item 6</a></li>
+                    <li><a href="#">menu item 7</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+
+   <!-- Table -->
+
+   <div class="container">
+    <table border="1" width="70%" align="center" >
+        <thead>
+            <tr>
+            <th>Sr.NO </th>
+            <th>Department/Institute/Center Name</td>
+            <th>Teacher</th>
+            <th>Area of Specilization</th>
+            <th>HEC Approved Supervisor</th>
+        </tr>
+        <tr>
+         <td>1</td>
+         <td>CEET - Department of Metallurgy & Materials Engineering</td>
+         <td>Dr. Abdus Salam</td>
+         <td>Physical Metallurgy</td>
+         <td>Yes</td>
+     </tr>
+     <tr>
+         <td>2</td>
+         <td>CEET - Department of Metallurgy & Materials Engineering</td>
+         <td>Dr. Tahir Ahmad</td>
+         <td></td>
+         <td>Yes</td>
+     </tr>
+     <tr>
+         <td>3</td>
+         <td>CEET - Department of Metallurgy & Materials Engineering</td>
+         <td>Dr. Mohsin Ali Raza</td>
+         <td>Materials Engineering / Materials Science</td>
+         <td>Yes</td>
+     </tr>
+     <tr>
+         <td>4</td>
+         <td>Centre of Excellence in Molecular Biology</td>
+         <td>Dr. Tayyab Husnain</td>
+         <td>Plant transformation	</td>
+         <td>Yes</td>
+     </tr>
+     <tr>
+         <td>5</td>
+         <td>Centre of Excellence in Molecular Biology</td>
+         <td>Dr. Idrees Ahmad Nasir</td>
+         <td>Bt-cotton in cotton zone</td>
+         <td>Yes</td>
+     </tr>
+     <tr>
+         <td>6</td>
+         <td>Centre of Excellence in Molecular Biology</td>
+         <td>Dr. Muhammad Idrees</td>
+         <td>Genome variability studies in the 5'Non-coding region of Hepatitis C Virus</td>
+         <td>Yes</td>
+     </tr>
+     <tr>
+         <td>7</td>
+         <td>Centre of Excellence in Molecular Biology</td>
+         <td>Dr. Afshan Yasmin</td>
+         <td>Genetic Diseases</td>
+         <td>Yes</td>
+     </tr>
+     <tr>
+         <td>4</td>
+         <td>Centre of Excellence in Molecular Biology</td>
+         <td>Dr. Tayyab Husnain</td>
+         <td>Plant transformation	</td>
+         <td>Yes</td>
+     </tr>
+     <tr>
+         <td>4</td>
+         <td>Centre of Excellence in Molecular Biology</td>
+         <td>Dr. Tayyab Husnain</td>
+         <td>Plant transformation	</td>
+         <td>Yes</td>
+     </tr>
+     <tr>
+         <td>4</td>
+         <td>Centre of Excellence in Molecular Biology</td>
+         <td>Dr. Tayyab Husnain</td>
+         <td>Plant transformation	</td>
+         <td>Yes</td>
+     </tr>
+     
+    </table>
+    <p class = "last-line"> 
+        * If name of an any faculty member is missing in published list of HEC approved supervisors then please send an email to webmaster@pu.edu.pk
+    </p>
+
+
+   </div>
+   <hr>
+   <div class="container">
+       <div class="icons">
+        <div class="box"><a href="#">
+            <i class="fab fa-facebook-square fa-3x"></i>
+        </a></div>
+        <div class="box"><a href="#">
+            <i class="fab fa-twitter fa-3x"></i>
+ 
+        </a></div>
+        <div class="box"><a href="#">
+            <i class="fab fa-youtube fa-3x"></i>
+ 
+        </a></div>
+        <div class="box"><a href="#">
+            <i class="fab fa-linkedin fa-3x"></i>
+ 
+        </a></div>
+       </div>
+   </div>
+    <footer>
+        <p>Copyright &copy; 2021 University of the Punjab. All rights reserved</p>
+    </footer>
+</body>
+</html>
